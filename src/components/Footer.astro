@@ -1,6 +1,12 @@
 ---
-import Social from './Social.astro';
+import Social from '@/components/Social.astro';
 ---
+
+<footer>
+  <Social platform="twitter" username="astrodotbuild" />
+  <Social platform="github" username="withastro" />
+  <Social platform="youtube" username="astrodotbuild" />
+</footer>
 
 <style>
   footer {
@@ -9,9 +15,3 @@ import Social from './Social.astro';
     margin-top: 2rem;
   }
 </style>
-
-<footer>
-  <Social platform="twitter" username="astrodotbuild" />
-  <Social platform="github" username="withastro" />
-  <Social platform="youtube" username="astrodotbuild" />
-</footer>
