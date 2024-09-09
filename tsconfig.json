@@ -1,3 +1,9 @@
 {
-  "extends": "astro/tsconfigs/base"
+  "extends": "astro/tsconfigs/base",
+  "compilerOptions": {
+    "baseUrl": ".", // 基础目录，通常是项目的根目录
+    "paths": {
+      "@/*": ["src/*"] // 使用 '@' 别名指向 'src' 目录
+    }
+  }
 }
