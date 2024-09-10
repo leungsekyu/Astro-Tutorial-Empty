@@ -3,6 +3,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 const pageTitle = '关于我';
 
+const h1Style = {
+  color: 'purple',
+  fontSize: '4rem',
+};
+
 const identity = {
   firstName: '莎拉',
   country: '加拿大',
@@ -21,7 +26,7 @@ const fontWeight = 'bold';
 const textCase = 'uppercase';
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout pageTitle={pageTitle} h1Style={h1Style}>
   <h2>……和我的新 Astro 网站！</h2>
 
   <p>我正在学习 Astro 的入门教程。这是我网站上的第二个页面，也是我自己建立的第一页面！</p>
