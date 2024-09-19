@@ -1,0 +1,15 @@
+---
+layout: '@/layouts/MarkdownPostLayout.astro'
+title: 'mdx测试'
+pubDate: 2024-09-19
+description: '这是一个使用 MDX 的尝试'
+author: 'leungsekyu'
+image: ''
+tags: ['mdx']
+---
+
+import Greeting from '@/components/Greeting.jsx';
+
+# 我将会使用一个 Preact 组件
+
+<Greeting client:load messages={['你好', '雷猴']} />
